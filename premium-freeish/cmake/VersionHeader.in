@@ -1,0 +1,12 @@
+#ifndef CHUNITHM_PREMIUM_FREEISH_VERSIONS_H
+#define CHUNITHM_PREMIUM_FREEISH_VERSIONS_H
+
+#include <vector>
+#include "offsets.h"
+
+auto static versions = std::vector<offsets_t>
+{
+@VERSION_ALL_OFFSETS@
+};
+
+#endif //CHUNITHM_PREMIUM_FREEISH_VERSIONS_H

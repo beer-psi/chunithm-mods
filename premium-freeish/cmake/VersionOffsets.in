@@ -1,0 +1,8 @@
+    // @GAME_ID@ @GAME_VERSION@
+    {
+        .time_date_stamp        = @TIME_DATE_STAMP@,
+        .address_of_entry_point = @ADDRESS_OF_ENTRY_POINT@,
+
+        .hook_track_count       = @OFFSET_HOOK_TRACK_COUNT@,
+        .hook_end_of_track      = @OFFSET_HOOK_END_OF_TRACK@,
+    },
