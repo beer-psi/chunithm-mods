@@ -69,7 +69,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {
     get_chart_internal_level = reinterpret_cast<decltype(get_chart_internal_level)>(std::get<1>(*get_chart_internal_level_match));
 
     const auto music_level_comparator_span = std::span<char const>(reinterpret_cast<char *>(music_level_comparator_addr), 500);
-    const auto sort_music_filter_lv_id_match = find_sort_music_filter_lv_id_address(music_level_comparator_span, 0);
+    const auto sort_music_filter_lv_id_match = find_sort_music_filter_lv_id_address(music_level_comparator_span, music_level_comparator_addr);
 
     if (!sort_music_filter_lv_id_match) {
         printf("InternalLevelSort: Could not find address of music sort type variable\n");

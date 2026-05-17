@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Unlicense
 // https://github.com/moonshadow565/single_header
 #pragma once
-#include <array>
 #include <cstring>
 #include <cstdint>
 #include <optional>
@@ -276,7 +275,7 @@ namespace ppp {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wgnu-string-literal-operator-template"
 template<class Char = char, Char...c>
-consteval auto operator"" _pattern() {
+consteval auto operator""_pattern() {
     constexpr auto pat = ppp::pattern<sizeof...(c) + 1>({ c..., '\0' });
 #pragma clang diagnostic pop
 #else
