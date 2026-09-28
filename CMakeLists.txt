@@ -28,4 +28,5 @@ if (IPO_SUPPORTED)
 endif ()
 
 add_subdirectory(internal-level-sort)
+add_subdirectory(credit-clock)
 add_subdirectory(premium-freeish)
